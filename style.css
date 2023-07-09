@@ -1,16 +1,122 @@
-html, body {
-    font-family: Arial, serif;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #4d2323;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-table {
-    border-collapse: collapse;
+html {
+  scroll-behavior: smooth;
 }
-table.border td, table.border th {
-    padding: 5px;
-    border: 1px solid #c0c0c0;
+* {
+  box-sizing: border-box;
 }
-table.border th {
-    background: #e0e0e0;
+main {
+  background-color: rgb(244, 239, 239);
+}
+header {
+  border-bottom: 1px solid black;
+  background-color: #829985;
+}
+footer {
+  border-top: 1px solid black;
+  background-color: #829985;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-link {
+  color: rgb(45, 76, 66);
+  text-decoration: none;
+  padding: 0 20px;
+  line-height: 20px;
+  transition: 0.3s;
+}
+.nav-link:hover {
+  color: #4d2323;
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section {
+  width: 50%;
+}
+.section-title {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #829985;
+}
+.link {
+  font-size: 18px;
+  text-decoration: none;
+  color: #020d04;
+  transition: color 0.5s;
+}
+.link:hover {
+  color: #5d7260;
+}
+.rss {
+  width: 121px;
+  height: 45px;
+  background-image: url("./assets/svg/rss.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.git_link {
+  width: 45px;
+  height: 45px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  color: #080101;
+  font-size: 13px;
+}
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 5px;
+  margin: 5px;
+}
+ul.icon {
+  list-style-type: none;
+}
+.contact_image {
+  width: 15px;
+  height: 15px;
+}
+.profile_picture {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  filter: grayscale(0.2) brightness(1.05);
+}
+.profile_container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
 }
