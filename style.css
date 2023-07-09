@@ -11,29 +11,26 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
 }
 main {
-  border: 1px solid red;
+  background-color: rgb(244, 239, 239);
 }
 header {
-  border: 1px solid red;
+  border-bottom: 1px solid black;
+  background-color: #829985;
 }
 footer {
-  border: 1px solid red;
+  border-top: 1px solid black;
+  background-color: #829985;
 }
 .container {
   max-width: 1440px;
   margin: 0 auto;
-}
-.nav-list {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-html {
-  scroll-behavior: smooth;
 }
 .nav-list {
   list-style: none;
@@ -42,16 +39,13 @@ html {
   align-items: center;
 }
 .nav-link {
+  color: rgb(45, 76, 66);
+  text-decoration: none;
   padding: 0 20px;
-  line-height: 50px;
+  line-height: 20px;
   transition: 0.3s;
 }
-.section-item a {
-  color: #829985;
-  text-decoration: none;
-  transition: color 0.5s;
-}
-.section-item a:hover {
+.nav-link:hover {
   color: #4d2323;
 }
 .main-container {
@@ -61,11 +55,6 @@ html {
 .section {
   width: 50%;
 }
-@media (max-width: 768px) {
-  .section {
-    width: 100%;
-  }
-}
 .section-title {
   font-size: 20px;
   font-weight: 400;
@@ -74,8 +63,9 @@ html {
   color: #829985;
 }
 .link {
+  font-size: 18px;
   text-decoration: none;
-  color: #829985;
+  color: #020d04;
   transition: color 0.5s;
 }
 .link:hover {
@@ -88,17 +78,45 @@ html {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.section-item {
-  position: relative;
-  padding-left: 30px;
+.git_link {
+  width: 45px;
+  height: 45px;
 }
-.section-item::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 0px;
-  width: 10px;
-  height: 10px;
-  border: 1px solid #829985;
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  color: #080101;
+  font-size: 13px;
+}
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 5px;
+  margin: 5px;
+}
+ul.icon {
+  list-style-type: none;
+}
+.contact_image {
+  width: 15px;
+  height: 15px;
+}
+.profile_picture {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  filter: grayscale(0.2) brightness(1.05);
+}
+.profile_container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
 }
